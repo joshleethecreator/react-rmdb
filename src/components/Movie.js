@@ -31,6 +31,7 @@ const Movie = () => {
         time={movie.runtime} 
         budget={movie.budget} 
         revenue={movie.revenue} 
+        releaseDate={movie.release_date}
       />
       <Grid header='Actors'>
         {movie.actors.map(actor => (

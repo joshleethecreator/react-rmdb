@@ -1,8 +1,8 @@
 import React from 'react';
-
+import propTypes from 'prop-types';
 import { Wrapper } from './Button.styles';
 
-const button = ({text, callback}) => {
+const Button = ({text, callback}) => {
   return(
     <Wrapper type='button' onClick={callback}>
       {text}
@@ -10,4 +10,9 @@ const button = ({text, callback}) => {
   )
 }
 
-export default button
+Button.propTypes = {
+  text: propTypes.string,
+  callback: propTypes.func
+}
+
+export default Button
